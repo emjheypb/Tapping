@@ -1,5 +1,5 @@
 # Tapping
-This application was created to demonstrate the lessons (android features, shared preferences, menus, and alert dialogs) learned from the Mobile App Development and Strategy course.
+This application was created to demonstrate the lessons (android features and shared preferences) learned from the Mobile App Development and Strategy course.
 
 The screen is divided into 2 regions, the left (blue) and the right (red). To gain points, each region should be tapped alternately.
 
