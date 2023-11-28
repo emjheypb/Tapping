@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tapping</string>
+    <string name="default_score">%1$d</string>
+    <string name="high_score">High Score: %1$d</string>
+    <string name="timer">00 : %1$s</string>
+    <string name="restart_button">Restart Button</string>
+    <string name="left_button">Left Button</string>
+    <string name="right_button">Right Button</string>
+</resources>
