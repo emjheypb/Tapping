@@ -4,9 +4,12 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.view.View.OnClickListener
 import android.widget.Button
+import androidx.appcompat.app.AlertDialog
 import com.ubasangg.tapping.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), OnClickListener {
@@ -31,6 +34,9 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         this.sharedPreferences = getSharedPreferences("SP", MODE_PRIVATE)
         highScore = this.sharedPreferences.getInt("SP_HIGHSCORE", 0)
         this.prefEditor = sharedPreferences.edit()
+
+        setSupportActionBar(this.binding.menuToolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         reset()
     }
@@ -112,5 +118,36 @@ class MainActivity : AppCompatActivity(), OnClickListener {
                 reset()
             }
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_options, menu) // menu_options is the Android Resource File name
+
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId) {
+            R.id.mi_Reset_Highscore -> {
+                val builder = AlertDialog.Builder(this@MainActivity)
+                builder.setMessage("Are you sure you want to reset your high score of $highScore?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes") { dialog, id ->
+                        highScore = 0
+                        reset()
+                        prefEditor.putInt("SP_HIGHSCORE", highScore)
+                        prefEditor.apply()
+                    }
+                    .setNegativeButton("No") { dialog, id ->
+                        // Dismiss the dialog
+                        dialog.dismiss()
+                    }
+                val alert = builder.create()
+                alert.show()
+                return true
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 }

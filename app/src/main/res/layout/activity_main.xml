@@ -30,6 +30,13 @@
             android:contentDescription="@string/right_button"/>
     </LinearLayout>
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFA726"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_highscore"
         android:layout_width="match_parent"

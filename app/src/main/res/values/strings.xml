@@ -6,4 +6,5 @@
     <string name="restart_button">Restart Button</string>
     <string name="left_button">Left Button</string>
     <string name="right_button">Right Button</string>
+    <string name="reset_high_score">Reset High Score</string>
 </resources>
