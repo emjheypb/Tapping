@@ -3,6 +3,8 @@ This application was created to demonstrate the lessons (android features, share
 
 The screen is divided into 2 regions, the left (blue) and the right (red). To gain points, each region should be tapped alternately.
 
-![Screenshot_1701195117](https://github.com/emjheypb/Tapping/assets/11970136/6477efdf-197a-4727-90a0-e59393b8449f)
-![Screenshot_1701195122](https://github.com/emjheypb/Tapping/assets/11970136/9b963876-a13d-4c4d-aaf9-93b07c3106b6)
-![Screenshot_1701195135](https://github.com/emjheypb/Tapping/assets/11970136/35f43803-e660-4e79-a6fe-6caf7333e1e9)
+![0](https://github.com/emjheypb/Tapping/assets/11970136/a823b7da-1a64-4e81-a658-c1bc26acd2b2)
+![1](https://github.com/emjheypb/Tapping/assets/11970136/c4539395-f854-4816-bb69-9f1f24c14431)
+![2](https://github.com/emjheypb/Tapping/assets/11970136/c25011ac-a237-41d5-b28a-669a2bcc4bed)
+![3](https://github.com/emjheypb/Tapping/assets/11970136/43ba4357-8371-49a5-b3d3-dfcf5b1ef523)
+![4](https://github.com/emjheypb/Tapping/assets/11970136/62c8a7f5-d278-4295-a287-3797084ce496)
